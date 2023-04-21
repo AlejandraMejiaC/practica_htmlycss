@@ -1,4 +1,4 @@
-h1{
+/*h1{
     color: mediumvioletred;
 }
 
@@ -34,4 +34,44 @@ color: hsl(hue, saturation, lightness);
     width: 500px;
     height: 200px;
     border-radius: 25px 25px 25px 25px;
+}
+
+section{
+background-color: aqua;
+}
+
+section div{
+    width: 500px;
+    height: 200px;
+    border: solid 2px black;
+     overflow hiden es como recortar el area
+    me oculta lo que no cabe en el recuadro
+     margin es el margen de toda la pag la primera seria arriba,derecha,inf,izq y margin auto me centra elementos
+    margin: 20px 20px;
+    padding es la margen interna de un elemento
+    padding: 30px; 
+}
+
+.uno {
+    background-color: blueviolet;
+}
+
+.dos {
+    background-color: crimson;
+}
+*/
+
+.contenedor{
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contenedor img{
+    width: 100%;
+}
+
+.contenedor img:hover{
+    transform: scale(1,2);
+    transition: 2s;
 }
