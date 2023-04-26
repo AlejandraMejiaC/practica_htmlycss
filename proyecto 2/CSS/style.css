@@ -1,0 +1,61 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: hsl(0, 0%, 13%);
+    --primario: #E45DFF;
+    --secundario:#AD70FF;
+    --azul: #64BBFF;
+    --azulClaro: #BCE2FF;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::before, :after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:'Barlow', sans-serif;
+}
+
+/*header*/
+header h1{
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--secundario);
+}
+
+header h1 span{
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+/*navegacion*/
+nav{
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+nav a:hover{
+    background-color: var(--azul);
+    
+}
+
+footer{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600s;
+}
