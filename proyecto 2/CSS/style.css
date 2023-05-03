@@ -19,6 +19,8 @@ html{
 body{
     font-family:'Barlow', sans-serif;
     font-size: 16px;
+    text-align: center;
+    
 }
 
 h1{
@@ -90,6 +92,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     height: 230px;
+    margin-bottom: 4rem;
 }
 
 .contenido-hero h2,.contenido-hero p{
@@ -131,10 +134,13 @@ footer{
     background-color: var(--azul);
 }
 
+@media (min-width:768px){
+
 .agrupar{
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3% ;
     column-gap: 1rem;
+}
 }
 
 .servicios .iconos{
@@ -142,4 +148,84 @@ footer{
     width: 15rem;
     background-color: var(--primario);
     border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios h3{
+    color: var(--azul);
+}
+
+.servicios p{
+    line-height: 2;
+}
+
+.sombra{
+    max-width: 95rem;
+    margin: 0 auto;
+    -webkit-box-shadow: 2px 5px 15px 0px rgba(194,101,189,1);
+    -moz-box-shadow: 2px 5px 15px 0px rgba(194,101,189,1);
+    box-shadow: 2px 5px 15px 0px rgba(194,101,189,1);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.formulario{
+    background-color: var(--azulClaro);
+    padding: 4rem;
+    border-radius: 2rem;
+    width: min(60rem,100%);
+    margin: 0 auto;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--oscuro);
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--oscuro);
+    margin-bottom: 2rem;
+}
+
+.input1{
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.campo textarea{
+    height: 20rem;
+}
+
+@media (min-width:768px){
+.contenedor-campos{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+}
+}
+.campo:nth-child(3),
+.campo:nth-child(4){
+    grid-column: 1/3;
 }
